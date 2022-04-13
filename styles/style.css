@@ -129,7 +129,8 @@ color: var(--second-btn-color);
 }
 
 .header-tel,
-.header-mailto {
+.header-mailto
+ {
     
     font-weight: 500;
     font-size: 14px;
@@ -145,10 +146,16 @@ color: var(--second-btn-color);
 .header-tel:focus, 
 .header-logo-black:hover, 
 .header-logo-black:focus
-
 {
     color: var(--first-btn-color);
 }
+
+.header-tel{
+
+}
+
+   
+   
 
 /* ------------------SELECTION-ONE------------ */
 
@@ -195,12 +202,23 @@ color: var(--first-title-color);
 background-color: #F5F4FA;
 }
 .selection-one {
-
+margin-left: auto;
+margin-right: auto;
+max-width: 1600px;
 padding-top: 200px;
 padding-bottom: 200px;
 background-color: var(--background-color)
 }
 
+.selection-one {
+    background-image:linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../image/Img\ index\(4\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* ------------------SELECTION-TWO------------ */
 
 .hero-title {
@@ -226,7 +244,9 @@ background-color: var(--background-color)
 }
 .hero-item {
 
+
     width: 270px;
+  
     
 }
 .selection-two {
@@ -349,6 +369,7 @@ margin-right: 30px;
 }
 
 .subtitle-text {
+    
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -357,11 +378,36 @@ margin-right: 30px;
     
 }
 
+.a-subtitle-icon {
+    width: 44px;
+    height: 44px;
 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+   background: rgba(255, 255, 255, 0.1);
+}
+.ul-subtitle-icon
+{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.li-subtitle-icon + .li-subtitle-icon
+{
+    margin-left: 10px;
+}
+.svg-subtitle-icon {
+   fill: currentColor;
+}
 
-
-
-
+.a-subtitle-icon:hover,
+.a-subtitle-icon:focus {
+    background-color: var(--first-btn-color);
+    color: var(--second-btn-color);
+}
 
 
 
@@ -372,6 +418,9 @@ margin-right: 30px;
 /* ------------------FOOTER------------ */
 
 .footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 padding-top: 60px;
 padding-bottom: 60px;
     background-color: var(--background-color)
@@ -417,6 +466,17 @@ padding-bottom: 60px;
 .footer-tel:hover,
 .footer-tel:focus {
     color: var(--first-btn-color);
+}
+
+
+.footer-content {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-btn-color);
 }
 
 /* ------------------SELECTION-PORTFOLIO------------ */
@@ -530,6 +590,53 @@ width: 370px;
     border-top: 0;
     
 }
+
+/* ------------------SELECTION---FIFE------------- */
+
+
+.section-fife {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.selection-client-list {
+    display: flex;
+   
+}
+
+.selection-client+.selection-client {
+    margin-left: 30px;
+}
+
+
+.selection-icon{
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+align-items: center;
+cursor: pointer;
+justify-content: center;
+display: flex;
+color: #afb1b8;
+
+}
+
+.selection-icon:hover,
+.selection-icon:focus {
+    color: var(--first-btn-color);
+    border-color: var(--first-btn-color);
+}
+
+.selection-svg {
+    fill: currentColor;
+}
+
+
+
+
+
+
 
 
 
