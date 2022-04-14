@@ -421,6 +421,7 @@ background-color: var(--background-color-next);
 }
 .svg-subtitle-icon {
    fill: currentColor;
+   color: --;
 }
 
 .a-subtitle-icon:hover,
@@ -429,7 +430,9 @@ background-color: var(--background-color-next);
     color: var(--second-btn-color);
 }
 
-
+.svg-footer {
+    color: var(--second-btn-color);
+}
 /* ------------------SELECTION---FIFE------------- */
 
 
@@ -485,9 +488,7 @@ background-color: var(--background-color-next);
 
 
 .footer {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color)
